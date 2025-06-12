@@ -5,7 +5,7 @@ module "repo_1" {
   private     = true
 }
 
-module "repo_3" {
+module "repo_2" {
   source      = "../../modules/github-repo"
   name        = "terraform-repo-2"
   description = "Another repo created via Terraform"
