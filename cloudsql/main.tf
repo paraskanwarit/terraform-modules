@@ -1,4 +1,3 @@
-// Production-grade Google CloudSQL instance
 // See: https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/sql_database_instance
 
 resource "google_sql_database_instance" "primary" {
