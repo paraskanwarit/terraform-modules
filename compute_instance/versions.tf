@@ -1,0 +1,29 @@
+/**
+ * Copyright 2018 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+# Terraform block configures the required version and providers for this module
+terraform {
+  required_version = ">=1.3.0" # Require Terraform version 1.3.0 or higher
+  required_providers {
+    google = {
+      source  = "hashicorp/google" # Use the official Google provider
+      version = ">= 3.88, < 7"     # Allow Google provider versions from 3.88 up to (but not including) 7
+    }
+  }
+  provider_meta "google" {
+    module_name = "blueprints/terraform/terraform-google-vm:compute_instance/v13.4.0" # Internal module name for tracking
+  }
+}
