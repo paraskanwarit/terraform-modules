@@ -1,4 +1,4 @@
-# Production-Grade Google CloudSQL Terraform Module
+# Google CloudSQL Terraform Module
 
 This module creates a production-ready Google CloudSQL instance, user, and database using the official [Terraform Google Provider](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/sql_database_instance).
 
