@@ -51,6 +51,6 @@ resource "google_sql_user" "default" {
 resource "google_sql_database" "default" {
   name     = var.db_name
   instance = google_sql_database_instance.primary.name
-  charset  = "utf8"
-  collation = "utf8_general_ci"
+  charset  = "UTF8"
+  collation = "en_US.UTF8"
 }
