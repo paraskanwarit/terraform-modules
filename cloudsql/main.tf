@@ -12,7 +12,6 @@ resource "google_sql_database_instance" "primary" {
 
     backup_configuration {
       enabled            = true
-      binary_log_enabled = true
       start_time         = "03:00"
     }
 
