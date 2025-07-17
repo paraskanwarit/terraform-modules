@@ -35,7 +35,7 @@ resource "google_sql_database_instance" "primary" {
     }
 
     activation_policy             = "ALWAYS"
-    deletion_protection_enabled  = true
+    deletion_protection_enabled  = false
     user_labels                  = var.labels
   }
 
